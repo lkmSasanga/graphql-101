@@ -10,7 +10,8 @@ app.get("/", (req, res) => {
     res.send("Up and running with graphql");
 });
 
-const root = { lco: () => console.log("Learning") };
+// const root = { lco: () => console.log("Learning") };
+const root = resolvers;
 
 app.use(
     "/graphql",
